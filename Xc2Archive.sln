@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xc2Archive", "Xc2Archive\Xc2Archive.csproj", "{90085272-F932-444A-88DA-EF895C9A3445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibHac", "LibHac\src\LibHac\LibHac.csproj", "{53BE47DE-CBC3-4438-8601-E26FB7017B13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90085272-F932-444A-88DA-EF895C9A3445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90085272-F932-444A-88DA-EF895C9A3445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90085272-F932-444A-88DA-EF895C9A3445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90085272-F932-444A-88DA-EF895C9A3445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BE47DE-CBC3-4438-8601-E26FB7017B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BE47DE-CBC3-4438-8601-E26FB7017B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BE47DE-CBC3-4438-8601-E26FB7017B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BE47DE-CBC3-4438-8601-E26FB7017B13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

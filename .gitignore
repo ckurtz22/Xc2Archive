@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+Xc2Archive/obj/*
+Xc2Archive/bin/*
+Xc2Archive/.vs
+/Xc2Archive/Properties/launchSettings.json
