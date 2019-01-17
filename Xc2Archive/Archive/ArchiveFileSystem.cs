@@ -135,6 +135,16 @@ namespace Xc2Archive
 			}
 		}
 
+		public void CreateFile(string path, long size, CreateFileOptions options)
+		{
+			throw new NotImplementedException();
+		}
+
+		public DirectoryEntryType GetEntryType(string path)
+		{
+			throw new NotImplementedException();
+		}
+
 		private class Directory
 		{
 			public List<Directory> Dirs { get; } = new List<Directory>();

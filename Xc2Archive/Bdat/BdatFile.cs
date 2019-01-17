@@ -2,15 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using Xc2Archive.Bdat;
 
 namespace Xc2Archive.Bdat
 {
 	class BdatFile
 	{
 		public List<BdatTable> Tables = new List<BdatTable>();
-		public BdatFile(IFile bdat)
+		public BdatFile(IFile bdat, string fileName)
 		{
 			using (var reader = new BinaryReader(bdat.AsStream()))
 			{
@@ -20,7 +18,7 @@ namespace Xc2Archive.Bdat
 				{
 					reader.BaseStream.Position = 8 + (4 * i);
 					reader.BaseStream.Position = reader.ReadInt32();
-					Tables.Add(new BdatTable(reader));
+					Tables.Add(new BdatTable(reader, fileName));
 				}
 
 			}

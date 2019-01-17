@@ -19,7 +19,8 @@ namespace Xc2Archive
 			FileSystemDir = switchFsDir;
 
 			Keyset = GetKeyset(logger);
-			SwitchFs = new SwitchFs(Keyset, new FileSystem(switchFsDir));
+			var localFs = new LocalFileSystem(switchFsDir);
+			SwitchFs = SwitchFs.OpenSdCard(Keyset, localFs);
 		}
 
         public List<RomFsFileSystem> GetRomfs(ulong titleId)

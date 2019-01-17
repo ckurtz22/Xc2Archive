@@ -8,7 +8,7 @@ namespace Xc2Archive
 {
 	internal class ArchiveFile : FileBase
 	{
-		private ArchiveFileInfo File;
+		public ArchiveFileInfo File { get; }
 		private IStorage BaseStorage { get; }
 		private long Size { get; }
 
